@@ -1,0 +1,41 @@
+    /* Additional styling for the search bar container */
+    .abc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f8f9fa;
+      }
+  
+      .search-container {
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+      }
+  
+      .search-bar {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 22px
+      }
+  
+      .search-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 30px;
+        margin-top: 10px;
+      }
+  
+      .search-btn:hover {
+        background-color: #f1f1f1;
+      }
+
+      .background {
+        background-image: url('/assets/background.jpg');
+        background-size: cover; /* or 'contain', depending on your needs */
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh; /* or any desired height */
+      }

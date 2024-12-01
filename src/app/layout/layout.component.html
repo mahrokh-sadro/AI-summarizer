@@ -1,0 +1,32 @@
+
+
+
+<div class="abc background">
+
+    <div class="search-container">
+      <h2 style="color: white;">Article Summarizer</h2>
+  
+      <input type="text" [(ngModel)]="articleUrl" class="form-control search-bar" placeholder="Search Google or type a URL" aria-label="Search" />
+          <button class="btn btn-primary search-btn" (click)="fetchSummary()">Search</button>
+          <button class="btn btn-primary search-btn" (click)="clear()">Clear</button>
+          <div class="row">
+            <!-- <p>URL: {{ articleUrl }}</p> -->
+          
+            <div *ngIf="isLoading" style="color: white;">Loading...</div>
+            <div *ngIf="error" class="error" style="color: white;">{{ error }}</div>
+            <div *ngIf="summary">
+              <h3 style="color: white;">Summary:</h3>
+              <!-- <p>{{ summary }}</p> -->
+              <div style="background-color: #ffdbf2;">
+                <div [ngxSummernote]="config" [ngxSummernoteDisabled]="false"
+                  [(ngModel)]="summary" [ngModelOptions]="{standalone: true}">
+              </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+  </div>
+  
+  
+  
